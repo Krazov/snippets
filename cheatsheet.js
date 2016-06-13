@@ -3,7 +3,7 @@ Array.prototype.forEach.call(document.querySelectorAll('.className'), function (
 
 // get duration of transition
 [].forEach.call(document.querySelectorAll('.elements'), function (element) {
-    console.log(Number(window.getComputedStyle(element).getPropertyValue('transition').split(/\s/)[1].replace(/sm?/g, '')));
+    console.log(parseFloat(window.getComputedStyle(element).getPropertyValue('transition').split(/\s/)[1], 10));
 });
 
-console.log(Number(window.getComputedStyle(document.querySelector('.element')).getPropertyValue('transition').split(/\s/)[1].replace(/sm?/g, '')));
+console.log(parseFloat(window.getComputedStyle(document.querySelector('.element')).getPropertyValue('transition').split(/\s/)[1], 10));
