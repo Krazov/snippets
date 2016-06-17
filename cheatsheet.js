@@ -1,5 +1,5 @@
 // remove elements from page
-Array.prototype.forEach.call(document.querySelectorAll('.className'), function (element) { element.parentNode.removeChild(element); });
+[].forEach.call(document.querySelectorAll('.className'), function (element) { element.parentNode.removeChild(element); });
 
 // get duration of transition
 [].forEach.call(document.querySelectorAll('.elements'), function (element) {
